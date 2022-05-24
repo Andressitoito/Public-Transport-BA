@@ -1,0 +1,9 @@
+.section{
+    @include flexCenter();
+    padding: 1rem
+}
+
+.container{
+    @include flexCenter();
+    padding: 1rem;
+}

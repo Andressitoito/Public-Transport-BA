@@ -1,0 +1,64 @@
+@mixin flexCenter ($direction: row, $wrap: wrap) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+$font-padd-marg: 0, 1, 2, 3, 4, 5, 6, 7, 8;
+
+@each $num in $font-padd-marg {
+    .p-#{$num} {
+        padding: #{$num * 0.25}rem !important;
+    }
+
+    .m-#{$num} {
+        margin: #{$num * 0.25}rem !important;
+    }
+
+    .mt-#{$num} {
+        margin-top: #{$num * 0.25}rem !important;
+    }
+
+    .mb-#{$num} {
+        margin-bottom: #{$num * 0.25}rem !important;
+    }
+
+    .ml-#{$num} {
+        margin-left: #{$num * 0.25}rem !important;
+    }
+
+    .mr-#{$num} {
+        margin-right: #{$num * 0.25}rem !important;
+    }
+
+    .is-size-#{$num} {
+        font-size: #{$num * 0.25}rem;
+    }
+}
+
+$arr-colors: 'success'$--clr-success $--clr-success-light,
+    'danger'$--clr-danger $--clr-danger-light,
+    'warning'$--clr-warning $--clr-warning-light,
+    'info'$--clr-info $--clr-info-light,
+    'dark'$--clr-dark $--clr-dark-light,
+    'grey'$--clr-grey $--clr-grey-light,
+    'white'$--clr-white $--clr-white-light,
+    'orange'$--clr-orange $--clr-orange-light;
+
+@each $colorName,
+$color,
+$color-light in $arr-colors {
+    .btn-#{$colorName} {
+        background-color: $color;
+
+        &:hover {
+            background-color: $color-light;
+        }
+    }
+
+    .is-clr-#{$colorName} {
+        color: $color
+    }
+}

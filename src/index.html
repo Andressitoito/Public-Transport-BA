@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./scss/main.css">
+ <script src="bikes.js"></script>
+ <title>Document</title>
+</head>
+
+<body>
+
+
+ <!-- 
+
+// say yes to all
+npm init -y 
+
+// install sass
+npm install sass --save-dev
+
+// install el parcel bundler
+npm install parcel-bundler ----save-dev
+
+// npm run dev 
+crea la carpeta main con el script y el index linkeado
+ -->
+ <nav>
+  <div class="navbar-left">
+
+   <div class="navbar-item">
+    <a href="" class="">Home</a>
+   </div>
+
+   <a class="navbar-item">
+    Documentation
+   </a>
+
+  </div>
+
+
+  <div class="navbar-right">
+   <div class="navbar-item">
+    <a class="">
+     <strong>Sign up</strong>
+    </a>
+   </div>
+   <div class="navbar-item">
+
+    <a class="button">
+     Log in
+    </a>
+   </div>
+  </div>
+
+ </nav>
+
+
+
+ <div class="section p-0">
+  <div class="container p-0">
+
+   <div id="cards-container" class="container">
+
+   </div>
+
+   <div class="card m-2">
+    <div class="card-title">
+     <p>Ramos Mejia, Jose Maria, Dr. Av. & Del</p>
+    </div>
+
+    <div class="card-body">
+     <p class="str upper mb-3">Direccion:</p>
+     <p class="mb-3">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.</p>
+     <p class="str upper mb-3">bicicletas disponibles:</p>
+     <p class="is-size-6 str">13</p>
+    </div>
+    <div class="card-footer">
+     <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
+    </div>
+   </div>
+   <div class="card m-2">
+    <div class="card-title">
+     <p>002 - Retiro I</p>
+    </div>
+
+    <div class="card-body">
+     <p class="str upper mb-3">Direccion:</p>
+     <p class="mb-3">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.</p>
+     <p class="str upper mb-3">bicicletas disponibles:</p>
+     <p class="is-size-6 str">13</p>
+    </div>
+    <div class="card-footer">
+     <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
+
+    </div>
+   </div>
+   <div class="card m-2">
+    <div class="card-title">
+     <p>002 - Retiro I</p>
+    </div>
+
+    <div class="card-body">
+     <p class="str upper mb-3">Direccion:</p>
+     <p class="mb-3">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.</p>
+     <p class="str upper mb-3">bicicletas disponibles:</p>
+     <p class="is-size-6 str">13</p>
+    </div>
+    <div class="card-footer">
+     <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
+
+    </div>
+   </div>
+   <div class="card m-2">
+    <div class="card-title">
+     <p>002 - Retiro I</p>
+    </div>
+
+    <div class="card-body">
+     <p class="str upper mb-3">Direccion:</p>
+     <p class="mb-3">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.</p>
+     <p class="str upper mb-3">bicicletas disponibles:</p>
+     <p class="is-size-6 str">13</p>
+    </div>
+    <div class="card-footer">
+     <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
+
+    </div>
+   </div>
+   <div class="card m-2">
+    <div class="card-title">
+     <p>002 - Retiro I</p>
+    </div>
+
+    <div class="card-body">
+     <p class="str upper mb-3">Direccion:</p>
+     <p class="mb-3">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.</p>
+     <p class="str upper mb-3">bicicletas disponibles:</p>
+     <p class="is-size-6 str">13</p>
+    </div>
+    <div class="card-footer">
+     <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
+
+    </div>
+   </div>
+   <div class="card m-2">
+    <div class="card-title">
+     <p>002 - Retiro I</p>
+    </div>
+
+    <div class="card-body">
+     <p class="str upper mb-3">Direccion:</p>
+     <p class="mb-3">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.</p>
+     <p class="str upper mb-3">bicicletas disponibles:</p>
+     <p class="is-size-6 str">13</p>
+    </div>
+    <div class="card-footer">
+     <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
+
+    </div>
+   </div>
+
+
+
+
+
+
+  </div>
+ </div>
+ <!--  {last_updated: 1653237302, ttl: 27, data: {…}}
+     data:
+     stations: Array(291)
+     [0 … 99]
+     0:
+     is_charging_station: false
+     is_installed: 1
+     is_renting: 1
+     is_returning: 1
+     last_reported: 1653237141
+     num_bikes_available: 13
+     num_bikes_available_types: {mechanical: 13, ebike: 0}
+     num_bikes_disabled: 0
+     num_docks_available: 7
+     num_docks_disabled: 0
+     station_id: "2"
+     status: "IN_SERVICE"
+     traffic: null
+    
+    
+    0:
+address: "Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av."
+altitude: 0
+capacity: 20
+groups: ['RETIRO']
+is_charging_station: false
+lat: -34.5924233
+lon: -58.3747151
+name: "002 - Retiro I"
+nearby_distance: 984916.08
+obcn: ""
+physical_configuration: "SMARTLITMAPFRAME"
+post_code: "11111"
+rental_methods: (3) ['KEY', 'TRANSITCARD', 'PHONE']
+station_id: "2"
+[[Prototype]]: Object-->
+
+
+
+
+ <footer>
+
+  <div>
+   created by =)
+  </div>
+ </footer>
+ <script>
+
+  // const end_buses = 'colectivos/feed-gtfs/'
+  const client_id = 'ccf6a5fb09eb40658fa10205fa9cf5ad'
+  const client_secret = '942459FdaA09428BB1Be9F5C254BDf38'
+
+
+  const getbikesData = async () => {
+   const resStations = await fetch('https://datosabiertos-transporte-apis.buenosaires.gob.ar:443/ecobici/gbfs/stationStatus?client_id=ccf6a5fb09eb40658fa10205fa9cf5ad&client_secret=942459FdaA09428BB1Be9F5C254BDf38')
+   const dataStations = await resStations.json()
+
+   return dataStations
+  }
+
+  const getStationsData = async () => {
+   const resStationsInfo = await fetch('https://datosabiertos-transporte-apis.buenosaires.gob.ar:443/ecobici/gbfs/stationInformation?client_id=ccf6a5fb09eb40658fa10205fa9cf5ad&client_secret=942459FdaA09428BB1Be9F5C254BDf38')
+   const dataStationsInfo = resStationsInfo.json()
+
+   return dataStationsInfo
+  }
+
+
+
+
+  // getbikesData()
+  //  .then((dataStationsInfo) => {
+  //   console.log(dataStationsInfo)
+
+  //   const bikesInformation = getBikes(dataStationsInfo.data.stations)
+  //   bikesInfo = bikesInformation
+  //   console.log(bikesInfo)
+
+  //   getStationsData()
+  //    .then((dataStations) => {
+
+  //     console.log(dataStations)
+  //     const getfullBycicleStationInfo = getBycicleStationInfo(dataStations.data.stations, bikesInfo)
+
+  //     fullBycicleStationInfo = getfullBycicleStationInfo
+  //    })
+
+  //    .then(() => {
+  //     console.log(fullBycicleStationInfo)
+
+  //     createCards(fullBycicleStationInfo)
+  //    })
+
+
+  //  })
+
+
+
+ 
+
+
+
+
+  // fetch('https://datosabiertos-transporte-apis.buenosaires.gob.ar:443/ecobici/gbfs/stationInformation?client_id=ccf6a5fb09eb40658fa10205fa9cf5ad&client_secret=942459FdaA09428BB1Be9F5C254BDf38')
+  //    .then((res) => res.json())
+  //    .then((data) => {
+  //     console.log(data.data.stations)
+
+  //     getBycicleStationInfo(data.data.stations)
+  //    })
+
+
+
+
+  // fetch('https://datosabiertos-transporte-apis.buenosaires.gob.ar:443/ecobici/gbfs/systemInformation?client_id=ccf6a5fb09eb40658fa10205fa9cf5ad&client_secret=942459FdaA09428BB1Be9F5C254BDf38')
+  // .then((res) => res.json())
+  // .then((data) => console.log(data))
+
+
+  //    var date = new Date(1942615200 * 1000);
+  // console.log(date.toUTCString());
+
+  /* /////////////////////////////////// */
+  /* GLOBAL VARIABLES */
+  /* /////////////////////////////////// */
+  const queryId = (id) => document.getElementById(id)
+
+
+  /* /////////////////////////////////// */
+  /* STATE VARIABLES */
+  /* /////////////////////////////////// */
+  let bikesInfo = []
+  let fullBycicleStationInfo = []
+
+
+
+  const createCards = (cardsData) => {
+   queryId('cards-container').innerHTML = ''
+
+   const html = cardsData.reduce((acc, curr) => {
+    const { address, name, groups, num_bikes_available, num_bikes_disabled, num_docks_available } = curr
+    return acc += `
+    <div class="card m-2">
+    <div class="card-title">
+     <p>${name}</p>
+    </div>
+
+    <div class="card-body">
+     <p class="str upper mb-3">Direccion:</p>
+     <p class="mb-3">${address}</p>
+     <p class="str upper mb-3">bicicletas disponibles:</p>
+     <p class="is-size-6 str">${num_bikes_available}</p>
+    </div>
+
+    <div class="card-footer">
+     <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
+    </div>
+   </div>
+    `
+   }, '')
+
+   queryId('cards-container').innerHTML = html
+  }
+
+  const getBycicleStationInfo = (dataStation, bikesInformation) => {
+   const bikesInfo = dataStation.map((curr) => {
+    const { station_id, name, address, groups } = curr
+
+    const bikeId = bikesInformation.find(bike => {
+     return bike.station_id === station_id
+    })
+
+    const { num_bikes_available, num_bikes_disabled, num_docks_available } = bikeId
+
+    return {
+     station_id: station_id,
+     num_bikes_available: num_bikes_available,
+     num_docks_available: num_docks_available,
+     num_bikes_disabled: num_bikes_disabled,
+     name: name,
+     address: address,
+     groups: groups
+    }
+   })
+
+   return bikesInfo
+  }
+
+  const getBikes = (arrBikes) => {
+   const bikesInfo = arrBikes.map(bike => {
+    const { station_id, num_bikes_available, num_docks_available, num_bikes_disabled } = bike
+
+    return {
+     station_id, num_bikes_available, num_docks_available, num_bikes_disabled
+    }
+   })
+
+   return bikesInfo
+  }
+
+
+
+
+
+
+
+ </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+.button {
+    font-family: $--ff-primary;
+    padding: .5rem;
+    border-radius: 5px;
+    margin: .5rem;
+    transition: ease .7s;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 150%;
+    }
+}
+
+// .btn-hover {
+//     // color: #FFF;
+//     transition: all 0.3s;
+//     position: relative;
+// }
+
+// .btn-hover::before {
+//     content: '';
+//     position: absolute;
+//     bottom: -2px;
+//     left: 0;
+//     width: 100%;
+//     height: 130%;
+//     z-index: 1;
+//     opacity: 0;
+//     transition: all 0.3s;
+//     border-top-width: 1px;
+//     border-bottom-width: 1px;
+//     border-top-style: solid;
+//     border-bottom-style: solid;
+//     border-top-color: $--clr-orange;
+//     border-bottom-color: $--clr-orange;
+//     transform: scale(0.1, 1);
+// }
+
+// .btn-hover:hover::before {
+//     opacity: 1;
+//     transform: scale(1, 1);
+// }
+
+// .btn-hover::after {
+//     content: '';
+//     position: absolute;
+//     bottom: 4px;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 1;
+//     transition: all 0.3s;
+//     // background-color: rgba(255,255,255,0.1);
+// }
+
+// .btn-hover:hover::after {
+//     opacity: 0;
+//     transform: scale(0.1, 1);
+// }

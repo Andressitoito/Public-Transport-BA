@@ -1,0 +1,44 @@
+nav {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    padding: .25rem;
+    font-family: $--ff-primary;
+}
+
+.navbar-left {
+    @include flexCenter();
+    margin-left: 0;
+
+}
+
+.navbar-right {
+    @include flexCenter();
+    margin-left: auto;
+}
+
+.navbar-item {
+    padding: .5rem;
+    border-radius: 5px;
+    margin: .5rem;
+    background-color: rgba(180, 180, 180, 0.151);
+    color: $--clr-orange;
+    transition: ease .5s;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $--clr-white;
+        background-color: $--bg-clr-body-1;
+        -webkit-transition: background-color 1000ms linear;
+        -ms-transition: background-color 1000ms linear;
+        transition: background-color 1000ms linear;
+
+    }
+
+ 
+}
+
