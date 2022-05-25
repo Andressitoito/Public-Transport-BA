@@ -7,6 +7,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link rel="stylesheet" href="./scss/main.css">
  <script src="bikes.js"></script>
+ <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css' />
  <title>Document</title>
 </head>
 
@@ -34,25 +35,19 @@ crea la carpeta main con el script y el index linkeado
     <a href="" class="">Home</a>
    </div>
 
-   <a class="navbar-item">
-    Documentation
-   </a>
-
+ 
+   <div class="navbar-item-input"><input class="navbar-input" type="text" id="search-station"
+     placeholder="Buscar por estacion"></div>
   </div>
 
+  <div class="navbar-item">
+   <a class="button" id="btn-search">
+    <i class="fas fa-search"></i>
+   </a>
+  </div>
 
   <div class="navbar-right">
-   <div class="navbar-item">
-    <a class="">
-     <strong>Sign up</strong>
-    </a>
-   </div>
-   <div class="navbar-item">
-
-    <a class="button">
-     Log in
-    </a>
-   </div>
+  
   </div>
 
  </nav>
@@ -60,32 +55,26 @@ crea la carpeta main con el script y el index linkeado
 
 
  <div class="section p-0">
+  <div>
+   <button class="button-pag disabled previous-page" id="prev-0" disabled>&lt;&lt; Pagina Anterior </button>
+   <button class="button-pag next-page" id="next-0">Proxima Pagina &gt;&gt;</button>
+  </div>
+  <div class="lds-ripple" id="spinner">
+   <div></div>
+   <div></div>
+  </div>
   <div class="container p-0" id="cards-container">
 
 
-   <div class="card m-2">
+
+   <!-- <div class="card m-2">
     <div class="card-title">
-     <p>Ramos Mejia, Jose Maria, Dr. Av. & Del</p>
+     <p>126 - MINISTERIO DE JUSTICIA Y SEGURIDAD</p>
     </div>
 
     <div class="card-body">
      <p class="str upper mb-3">Direccion:</p>
-     <p class="mb-3">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.</p>
-     <p class="str upper mb-3">bicicletas disponibles:</p>
-     <p class="is-size-6 str">13</p>
-    </div>
-    <div class="card-footer">
-     <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
-    </div>
-   </div>
-   <div class="card m-2">
-    <div class="card-title">
-     <p>002 - Retiro I</p>
-    </div>
-
-    <div class="card-body">
-     <p class="str upper mb-3">Direccion:</p>
-     <p class="mb-3">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.</p>
+     <p class="mb-3">Regimiento De Patricios Av. & Araoz De Lamadrid, Gregorio, Gral.</p>
      <p class="str upper mb-3">bicicletas disponibles:</p>
      <p class="is-size-6 str">13</p>
     </div>
@@ -93,148 +82,24 @@ crea la carpeta main con el script y el index linkeado
      <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
 
     </div>
-   </div>
-   <div class="card m-2">
-    <div class="card-title">
-     <p>002 - Retiro I</p>
-    </div>
-
-    <div class="card-body">
-     <p class="str upper mb-3">Direccion:</p>
-     <p class="mb-3">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.</p>
-     <p class="str upper mb-3">bicicletas disponibles:</p>
-     <p class="is-size-6 str">13</p>
-    </div>
-    <div class="card-footer">
-     <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
-
-    </div>
-   </div>
-   <div class="card m-2">
-    <div class="card-title">
-     <p>002 - Retiro I</p>
-    </div>
-
-    <div class="card-body">
-     <p class="str upper mb-3">Direccion:</p>
-     <p class="mb-3">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.</p>
-     <p class="str upper mb-3">bicicletas disponibles:</p>
-     <p class="is-size-6 str">13</p>
-    </div>
-    <div class="card-footer">
-     <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
-
-    </div>
-   </div>
-   <div class="card m-2">
-    <div class="card-title">
-     <p>002 - Retiro I</p>
-    </div>
-
-    <div class="card-body">
-     <p class="str upper mb-3">Direccion:</p>
-     <p class="mb-3">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.</p>
-     <p class="str upper mb-3">bicicletas disponibles:</p>
-     <p class="is-size-6 str">13</p>
-    </div>
-    <div class="card-footer">
-     <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
-
-    </div>
-   </div>
-   <div class="card m-2">
-    <div class="card-title">
-     <p>002 - Retiro I</p>
-    </div>
-
-    <div class="card-body">
-     <p class="str upper mb-3">Direccion:</p>
-     <p class="mb-3">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.</p>
-     <p class="str upper mb-3">bicicletas disponibles:</p>
-     <p class="is-size-6 str">13</p>
-    </div>
-    <div class="card-footer">
-     <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
-
-    </div>
-   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   </div> -->
 
 
 
 
 
   </div>
+  <div>
+   <button class="button-pag disabled previous-page" id="prev-0" disabled>&lt;&lt; Pagina Anterior </button>
+   <button class="button-pag next-page" id="next-0">Proxima Pagina &gt;&gt;</button>
+  </div>
  </div>
- <!--  {last_updated: 1653237302, ttl: 27, data: {…}}
-     data:
-     stations: Array(291)
-     [0 … 99]
-     0:
-     is_charging_station: false
-     is_installed: 1
-     is_renting: 1
-     is_returning: 1
-     last_reported: 1653237141
-     num_bikes_available: 13
-     num_bikes_available_types: {mechanical: 13, ebike: 0}
-     num_bikes_disabled: 0
-     num_docks_available: 7
-     num_docks_disabled: 0
-     station_id: "2"
-     status: "IN_SERVICE"
-     traffic: null
-    
-    
-    0:
-address: "Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av."
-altitude: 0
-capacity: 20
-groups: ['RETIRO']
-is_charging_station: false
-lat: -34.5924233
-lon: -58.3747151
-name: "002 - Retiro I"
-nearby_distance: 984916.08
-obcn: ""
-physical_configuration: "SMARTLITMAPFRAME"
-post_code: "11111"
-rental_methods: (3) ['KEY', 'TRANSITCARD', 'PHONE']
-station_id: "2"
-[[Prototype]]: Object-->
-
-
 
 
  <footer>
 
-  <div>
-   created by =)
+  <div class="footer-item">
+   Created by Andresito =)
   </div>
  </footer>
  <script>
@@ -260,30 +125,35 @@ station_id: "2"
 
 
 
+  const getFullbikesData = () => {
+   getbikesData()
+    .then((dataStationsInfo) => {
+     console.log(dataStationsInfo)
+     const bikesInformation = getBikes(dataStationsInfo.data.stations)
+     bikesInfo = bikesInformation
+     console.log(bikesInfo)
+     getStationsData()
+      .then((dataStations) => {
+       console.log(dataStations)
+       const getfullBycicleStationInfo = getBycicleStationInfo(dataStations.data.stations, bikesInfo)
+       fullBycicleStationInfo = getfullBycicleStationInfo
+      })
+      .then(() => {
+       console.log(fullBycicleStationInfo)
+       infoToFilter = [...fullBycicleStationInfo]
+       console.log(infoToFilter)
+       bycicleStationInfo = bikeSegments(fullBycicleStationInfo)
+       queryId('spinner').style.display = 'none'
+       console.log(bycicleStationInfo)
+       createCards(bycicleStationInfo)
+       maxPageIndex = bycicleStationInfo.length
+       console.log(infoToFilter)
+      })
+    })
 
-  // getbikesData()
-  //  .then((dataStationsInfo) => {
-  //   console.log(dataStationsInfo)
-  //   const bikesInformation = getBikes(dataStationsInfo.data.stations)
-  //   bikesInfo = bikesInformation
-  //   console.log(bikesInfo)
-  //   getStationsData()
-  //    .then((dataStations) => {
-  //     console.log(dataStations)
-  //     const getfullBycicleStationInfo = getBycicleStationInfo(dataStations.data.stations, bikesInfo)
-  //     fullBycicleStationInfo = getfullBycicleStationInfo
-  //    })
-  //    .then(() => {
-  //     console.log(fullBycicleStationInfo)
-  // bycicleStationInfo = bikeSegments(fullBycicleStationInfo)
-  //  console.log(bycicleStationInfo)
-  //     createCards(bycicleStationInfo)
-  //    })
-  //  })
+  }
 
-
-
-
+  // getFullbikesData()
 
 
 
@@ -306,7 +176,9 @@ station_id: "2"
   let bikesInfo = []
   let fullBycicleStationInfo = []
   let bycicleStationInfo = []
+  let infoToFilter = []
   let pageIndex = 0
+  let maxPageIndex = 0
 
 
   /* /////////////////////////////////// */
@@ -317,7 +189,7 @@ station_id: "2"
    queryId('cards-container').innerHTML = ''
 
 
-   const html = cardsData[0].reduce((acc, curr) => {
+   const html = cardsData[pageIndex].reduce((acc, curr) => {
     const { address, name, groups, num_bikes_available, num_bikes_disabled, num_docks_available } = curr
     return acc += `
     <div class="card m-2">
@@ -399,31 +271,121 @@ station_id: "2"
    return result
   }
 
-  // bikeSegments(bikes)
+  /* /////////////////////////////////// */
+  /* CREATE PREV NEXT BUTTONS */
+  /* /////////////////////////////////// */
+  const arrNext = document.querySelectorAll('.next-page')
 
-  // console.log(bikes)
+  const arrPrev = document.querySelectorAll('.previous-page')
 
- //  let bikesegment = bikeSegments(bikes)
+  arrNext.forEach(button => {
+   button.addEventListener('click', () => {
 
- //  console.log(bikesegment[1])
+    let maxPageIndex = bycicleStationInfo.length
+    console.log(maxPageIndex)
+    if (pageIndex == maxPageIndex - 1) {
+     arrNext.forEach(button => {
+      button.classList.add('disabled')
+      button.disabled = true
+     })
+    } else if (pageIndex < maxPageIndex) {
+     pageIndex++
+     disableEnableButtons()
+     arrNext.forEach(button => {
+      button.classList.remove('disabled')
+      button.disabled = false
+     })
+     createCards(bycicleStationInfo)
+     console.log(pageIndex)
+    }
+   }
 
- //  let bikees = bikesegment[1]
- //  console.log(bikees)
+   )
+  })
 
- // bikesegment[2].map((acc,curr) =>{
- //   console.log('entro')
- //  })
+  arrPrev.forEach(button => {
+   button.addEventListener('click', () => {
+    pageIndex--
+    disableEnableButtons()
+    createCards(bycicleStationInfo)
+    console.log(pageIndex)
+
+    if (pageIndex < maxPageIndex) {
+     arrNext.forEach(button => {
+      button.disabled = false
+      button.classList.remove('disabled')
+     })
+    }
+   })
+  })
+
+  const disableEnableButtons = () => {
+   if (pageIndex > 0) {
+    arrPrev.forEach(button => {
+     button.disabled = false
+     button.classList.remove('disabled')
+    })
+   } else if (pageIndex < 1) {
+    arrPrev.forEach(button => {
+     button.classList.add('disabled')
+     button.disabled = true
+    })
+   }
+  }
+
+  disableEnableButtons()
+
+  /* /////////////////////////////////// */
+  /* FILTER INPUTS */
+  /* /////////////////////////////////// */
+  const filterbyStation = (station) => {
+   let filteredStations = infoToFilter.filter(bike => {
+    return bike.name.toLowerCase().indexOf(station.toLowerCase()) >= 0
+   })
+
+   return filteredStations
+
+  }
 
 
+  queryId('btn-search').addEventListener('click', () => {
+   if (queryId('search-station').value !== '') {
+    createFilteredCards(filterbyStation(queryId('search-station').value))
+   }
+  })
 
+  /* /////////////////////////////////// */
+  /* CREATE CARDS FROM FILTER */
+  /* /////////////////////////////////// */
 
+  const createFilteredCards = (cardsData) => {
 
+   queryId('cards-container').innerHTML = ''
 
+   const html = cardsData.reduce((acc, curr) => {
+    const { address, name, groups, num_bikes_available, num_bikes_disabled, num_docks_available } = curr
+    return acc += `
+     <div class="card m-2">
+     <div class="card-title">
+      <p>${name}</p>
+     </div>
 
+     <div class="card-body">
+      <p class="str upper mb-3">Direccion:</p>
+      <p class="mb-3">${address}</p>
+      <p class="str upper mb-3">bicicletas disponibles:</p>
+      <p class="is-size-6 str">${num_bikes_available}</p>
+     </div>
 
+     <div class="card-footer">
+      <button class="button btn-info is-clr-white">Mas informacion - Mapa</button>
+     </div>
+    </div>
+     `
+   }, '')
 
-
-
+   queryId('cards-container').innerHTML = html
+  }
 
 
 

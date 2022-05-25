@@ -3,7 +3,7 @@
     justify-content: space-between;
     text-align: center;
     width: 18rem;
-    height: 20rem;
+    height: 21rem;
     padding: 1rem;
     border-radius: 10px;
     background-color: $--clr-orange-cards;
@@ -13,10 +13,10 @@
     .card-title {
         text-transform: uppercase;
         font-weight: 800;
-        font-size: 1.45rem;
-        margin-bottom: 1rem;
+        font-size: 1.40rem;
+        margin-bottom: .5rem;
         // outline: 2px solid red;
-        height: 5rem;
+        height: 4.6rem;
         @include flexCenter()
     }
 

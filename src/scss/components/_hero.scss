@@ -1,5 +1,5 @@
 .section{
-    @include flexCenter();
+    @include flexCenter($direction: column);
     padding: 1rem
 }
 

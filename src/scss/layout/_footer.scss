@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+
+    .footer-item{
+        background-color: $--bg-transparent;
+        padding: .5rem;
+        border-radius: 5px;
+        color: $--clr-orange;
+    }
+}

@@ -11,6 +11,50 @@
     }
 }
 
+.button-pag {
+    font-family: $--ff-primary;
+    cursor: pointer;
+
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 5px;
+    margin: .5rem;
+    background-color: $--bg-transparent;
+    color: $--clr-orange;
+    transition: ease .5s;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &:hover {
+        color: $--clr-white;
+        background-color: $--bg-clr-body-1;
+        -webkit-transition: background-color 1000ms linear;
+        -ms-transition: background-color 1000ms linear;
+        transition: background-color 1000ms linear;
+
+    }
+
+
+
+}
+
+.disabled {
+    color: grey;
+
+    &:hover {
+        color: grey;
+        background-color: $--bg-transparent;
+        -webkit-transition: background-color 0ms linear;
+        -ms-transition: background-color 0ms linear;
+        transition: background-color 0ms linear;
+
+    }
+
+}
+
 // .btn-hover {
 //     // color: #FFF;
 //     transition: all 0.3s;

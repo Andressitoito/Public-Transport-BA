@@ -1,5 +1,5 @@
 
- let bikes = [
+let bikes = [
   {
     "station_id": "2",
     "num_bikes_available": 5,
@@ -1098,10 +1098,10 @@
     "is_returning": 1,
     "traffic": null
   },
- 
+
 ]
 
-let stations =[
+let stations = [
   {
     "station_id": "2",
     "name": "002 - Retiro I",
@@ -8694,4 +8694,808 @@ let estaciones = {
     }
   ]
 }
-
+let fullbikeData = [
+  {
+    "station_id": "2",
+    "num_bikes_available": 11,
+    "num_docks_available": 8,
+    "num_bikes_disabled": 1,
+    "name": "002 - Retiro I",
+    "address": "Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.",
+    "groups": [
+      "RETIRO"
+    ]
+  },
+  {
+    "station_id": "3",
+    "num_bikes_available": 8,
+    "num_docks_available": 12,
+    "num_bikes_disabled": 0,
+    "name": "003 - ADUANA",
+    "address": "Moreno & Av Paseo Colon",
+    "groups": [
+      "MONSERRAT"
+    ]
+  },
+  {
+    "station_id": "4",
+    "num_bikes_available": 7,
+    "num_docks_available": 13,
+    "num_bikes_disabled": 0,
+    "name": "004 - Plaza Roma",
+    "address": "Lavalle & Bouchard",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "5",
+    "num_bikes_available": 27,
+    "num_docks_available": 14,
+    "num_bikes_disabled": 1,
+    "name": "005 - Plaza Italia",
+    "address": "Av. Sarmiento 2601",
+    "groups": [
+      "PALERMO"
+    ]
+  },
+  {
+    "station_id": "6",
+    "num_bikes_available": 17,
+    "num_docks_available": 3,
+    "num_bikes_disabled": 0,
+    "name": "006 - Parque Lezama",
+    "address": "Avenida Martin Garcia, 295",
+    "groups": [
+      "SAN TELMO"
+    ]
+  },
+  {
+    "station_id": "7",
+    "num_bikes_available": 8,
+    "num_docks_available": 8,
+    "num_bikes_disabled": 0,
+    "name": "007 - OBELISCO",
+    "address": "CARLOS PELEGRINI 215",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "8",
+    "num_bikes_available": 15,
+    "num_docks_available": 9,
+    "num_bikes_disabled": 0,
+    "name": "008 - Congreso",
+    "address": "Cevallos, Virrey& Yrigoyen, Hipolito Av.",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "9",
+    "num_bikes_available": 5,
+    "num_docks_available": 15,
+    "num_bikes_disabled": 4,
+    "name": "009 - Parque Las Heras",
+    "address": "2300 Diaz, Cnel. Av. & French",
+    "groups": [
+      "PALERMO"
+    ]
+  },
+  {
+    "station_id": "12",
+    "num_bikes_available": 4,
+    "num_docks_available": 12,
+    "num_bikes_disabled": 0,
+    "name": "012 - Plaza Vicente Lopez",
+    "address": "Parana & Juncal",
+    "groups": [
+      "RECOLETA"
+    ]
+  },
+  {
+    "station_id": "13",
+    "num_bikes_available": 12,
+    "num_docks_available": 17,
+    "num_bikes_disabled": 1,
+    "name": "013 - ONCE",
+    "address": "Av. Pueyrredon & Av. Rivadavia",
+    "groups": [
+      "BALVANERA"
+    ]
+  },
+  {
+    "station_id": "14",
+    "num_bikes_available": 13,
+    "num_docks_available": 14,
+    "num_bikes_disabled": 3,
+    "name": "014 - Pacifico",
+    "address": "Santa Fe Av. & Bullrich, Int. Av.",
+    "groups": [
+      "PALERMO"
+    ]
+  },
+  {
+    "station_id": "17",
+    "num_bikes_available": 10,
+    "num_docks_available": 8,
+    "num_bikes_disabled": 2,
+    "name": "017 - Plaza Almagro",
+    "address": "441 Bulnes & Peron, Juan Domingo, Tte. General",
+    "groups": [
+      "ALMAGRO"
+    ]
+  },
+  {
+    "station_id": "21",
+    "num_bikes_available": 13,
+    "num_docks_available": 11,
+    "num_bikes_disabled": 0,
+    "name": "021 - Parque Patricios",
+    "address": "Iguazu & Uspallata",
+    "groups": [
+      "PARQUE PATRICIOS"
+    ]
+  },
+  {
+    "station_id": "22",
+    "num_bikes_available": 10,
+    "num_docks_available": 10,
+    "num_bikes_disabled": 0,
+    "name": "022 - Arenales",
+    "address": "Cerrito & Arenales",
+    "groups": [
+      "RETIRO"
+    ]
+  },
+  {
+    "station_id": "23",
+    "num_bikes_available": 11,
+    "num_docks_available": 0,
+    "num_bikes_disabled": 1,
+    "name": "023 - Suipacha",
+    "address": "Suipacha & Viamonte",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "24",
+    "num_bikes_available": 11,
+    "num_docks_available": 7,
+    "num_bikes_disabled": 0,
+    "name": "024 - ALSINA",
+    "address": "Adolfo Alsina& Bernardo De Irigoyen",
+    "groups": [
+      "MONSERRAT"
+    ]
+  },
+  {
+    "station_id": "25",
+    "num_bikes_available": 17,
+    "num_docks_available": 5,
+    "num_bikes_disabled": 2,
+    "name": "025 - Plaza Guemes",
+    "address": "Salguero, Jeronimo & Mansilla, Lucio Norberto, General",
+    "groups": [
+      "PALERMO"
+    ]
+  },
+  {
+    "station_id": "26",
+    "num_bikes_available": 10,
+    "num_docks_available": 14,
+    "num_bikes_disabled": 0,
+    "name": "026 - JUANA MANSO I",
+    "address": "Manso Juana & De La Barra, Emma",
+    "groups": [
+      "PUERTO MADERO"
+    ]
+  },
+  {
+    "station_id": "27",
+    "num_bikes_available": 12,
+    "num_docks_available": 4,
+    "num_bikes_disabled": 0,
+    "name": "027 - Montevideo",
+    "address": "Cordoba Av. & Montevideo",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "29",
+    "num_bikes_available": 6,
+    "num_docks_available": 23,
+    "num_bikes_disabled": 1,
+    "name": "029 - Parque Centenario",
+    "address": "Av. Patricias Argentinas & Estivao",
+    "groups": [
+      "CABALLITO"
+    ]
+  },
+  {
+    "station_id": "30",
+    "num_bikes_available": 8,
+    "num_docks_available": 11,
+    "num_bikes_disabled": 1,
+    "name": "030 - Peña",
+    "address": "Peña & Azcuenaga",
+    "groups": [
+      "RECOLETA"
+    ]
+  },
+  {
+    "station_id": "32",
+    "num_bikes_available": 1,
+    "num_docks_available": 15,
+    "num_bikes_disabled": 0,
+    "name": "032 - Catedral",
+    "address": "67 San Martin",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "33",
+    "num_bikes_available": 3,
+    "num_docks_available": 17,
+    "num_bikes_disabled": 0,
+    "name": "033 - Facultad de Medicina",
+    "address": "Pres. José Evaristo Uriburu 987",
+    "groups": [
+      "RECOLETA"
+    ]
+  },
+  {
+    "station_id": "35",
+    "num_bikes_available": 8,
+    "num_docks_available": 12,
+    "num_bikes_disabled": 0,
+    "name": "035 - INGENIERO BUTTY",
+    "address": "Ing. E. Butty 291",
+    "groups": [
+      "RETIRO"
+    ]
+  },
+  {
+    "station_id": "36",
+    "num_bikes_available": 0,
+    "num_docks_available": 15,
+    "num_bikes_disabled": 1,
+    "name": "036 - MAIPÚ",
+    "address": "MAIPÙ 300",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "38",
+    "num_bikes_available": 13,
+    "num_docks_available": 7,
+    "num_bikes_disabled": 0,
+    "name": "038 - Plaza Libertad",
+    "address": "Cerrito 990 y Av. Marcelo T. De Alvear",
+    "groups": [
+      "RETIRO"
+    ]
+  },
+  {
+    "station_id": "41",
+    "num_bikes_available": 7,
+    "num_docks_available": 12,
+    "num_bikes_disabled": 1,
+    "name": "041 - Urquiza y Rondeau",
+    "address": "Urquiza, Gral. & Rondeau",
+    "groups": [
+      "PARQUE PATRICIOS"
+    ]
+  },
+  {
+    "station_id": "43",
+    "num_bikes_available": 6,
+    "num_docks_available": 14,
+    "num_bikes_disabled": 0,
+    "name": "334 - CENTRO DE EXPOSICIONES",
+    "address": "2133 Figueroa Alcorta",
+    "groups": [
+      "RECOLETA"
+    ]
+  },
+  {
+    "station_id": "44",
+    "num_bikes_available": 10,
+    "num_docks_available": 9,
+    "num_bikes_disabled": 1,
+    "name": "044 - Ecoparque",
+    "address": "Av. Del Libertador, 3260",
+    "groups": [
+      "PALERMO"
+    ]
+  },
+  {
+    "station_id": "45",
+    "num_bikes_available": 9,
+    "num_docks_available": 11,
+    "num_bikes_disabled": 0,
+    "name": "045 - Uruguay",
+    "address": "561 Uruguay & Av. Tucuman",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "46",
+    "num_bikes_available": 11,
+    "num_docks_available": 7,
+    "num_bikes_disabled": 0,
+    "name": "046 - Chile",
+    "address": "Calle Perú, 718",
+    "groups": [
+      "SAN TELMO"
+    ]
+  },
+  {
+    "station_id": "48",
+    "num_bikes_available": 8,
+    "num_docks_available": 5,
+    "num_bikes_disabled": 3,
+    "name": "034 - Colonia Express",
+    "address": "150 Dellepiane Y Pedro de Mendoza",
+    "groups": [
+      "BOCA"
+    ]
+  },
+  {
+    "station_id": "49",
+    "num_bikes_available": 7,
+    "num_docks_available": 9,
+    "num_bikes_disabled": 0,
+    "name": "049 - 33 Orientales",
+    "address": "Constitucion & Treinta Y Tres Orientales",
+    "groups": [
+      "BOEDO"
+    ]
+  },
+  {
+    "station_id": "50",
+    "num_bikes_available": 19,
+    "num_docks_available": 1,
+    "num_bikes_disabled": 0,
+    "name": "050 - Hospital Rivadavia",
+    "address": "2516 Pereyra Lucena",
+    "groups": [
+      "PALERMO"
+    ]
+  },
+  {
+    "station_id": "51",
+    "num_bikes_available": 7,
+    "num_docks_available": 5,
+    "num_bikes_disabled": 0,
+    "name": "051 - TUCUMAN",
+    "address": "Tucuman & 9 De Julio Av.",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "54",
+    "num_bikes_available": 2,
+    "num_docks_available": 8,
+    "num_bikes_disabled": 6,
+    "name": "054 - Acuña de Figueroa",
+    "address": "Lavalle 4015",
+    "groups": [
+      "ALMAGRO"
+    ]
+  },
+  {
+    "station_id": "56",
+    "num_bikes_available": 9,
+    "num_docks_available": 5,
+    "num_bikes_disabled": 2,
+    "name": "056 - Plaza Palermo Viejo",
+    "address": "Costa Rica & Armenia",
+    "groups": [
+      "PALERMO"
+    ]
+  },
+  {
+    "station_id": "58",
+    "num_bikes_available": 3,
+    "num_docks_available": 16,
+    "num_bikes_disabled": 1,
+    "name": "058 - Ministro Carranza",
+    "address": "Santa Fe Av. & Dorrego",
+    "groups": [
+      "PALERMO"
+    ]
+  },
+  {
+    "station_id": "59",
+    "num_bikes_available": 8,
+    "num_docks_available": 12,
+    "num_bikes_disabled": 0,
+    "name": "018 - Independencia",
+    "address": "Idependencia y Bernardo de Irigoyen",
+    "groups": [
+      "MONSERRAT"
+    ]
+  },
+  {
+    "station_id": "60",
+    "num_bikes_available": 8,
+    "num_docks_available": 12,
+    "num_bikes_disabled": 0,
+    "name": "060 - 25 De Mayo",
+    "address": "527 25 De Mayo",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "61",
+    "num_bikes_available": 4,
+    "num_docks_available": 11,
+    "num_bikes_disabled": 1,
+    "name": "098 - AV. ALVAREZ JONTE Y BENITO JUAREZ",
+    "address": "Benito Juarez 2205",
+    "groups": [
+      "MONTE CASTRO"
+    ]
+  },
+  {
+    "station_id": "63",
+    "num_bikes_available": 2,
+    "num_docks_available": 18,
+    "num_bikes_disabled": 0,
+    "name": "063 - Reconquista",
+    "address": "Reconquista & Cordoba Av.",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "64",
+    "num_bikes_available": 5,
+    "num_docks_available": 15,
+    "num_bikes_disabled": 0,
+    "name": "064 - RIOBAMBA",
+    "address": "Riobamba 1264 & Juncal",
+    "groups": [
+      "RECOLETA"
+    ]
+  },
+  {
+    "station_id": "65",
+    "num_bikes_available": 4,
+    "num_docks_available": 12,
+    "num_bikes_disabled": 5,
+    "name": "065 - Julián Álvarez",
+    "address": "3822 Guemes",
+    "groups": [
+      "PALERMO"
+    ]
+  },
+  {
+    "station_id": "66",
+    "num_bikes_available": 0,
+    "num_docks_available": 20,
+    "num_bikes_disabled": 0,
+    "name": "066 - Billinghurst",
+    "address": "3508 Carcova",
+    "groups": [
+      "RECOLETA"
+    ]
+  },
+  {
+    "station_id": "68",
+    "num_bikes_available": 14,
+    "num_docks_available": 2,
+    "num_bikes_disabled": 0,
+    "name": "105 - PARQUE SAAVEDRA",
+    "address": "García del Río 3590",
+    "groups": [
+      "SAAVEDRA"
+    ]
+  },
+  {
+    "station_id": "69",
+    "num_bikes_available": 6,
+    "num_docks_available": 10,
+    "num_bikes_disabled": 0,
+    "name": "069 - Ecuador",
+    "address": "1226 Ecuador & Mansilla, Lucio Norberto, General",
+    "groups": [
+      "RECOLETA"
+    ]
+  },
+  {
+    "station_id": "70",
+    "num_bikes_available": 6,
+    "num_docks_available": 12,
+    "num_bikes_disabled": 2,
+    "name": "070 - ARAOZ",
+    "address": "1413 Araoz & Gorriti CABA",
+    "groups": [
+      "PALERMO"
+    ]
+  },
+  {
+    "station_id": "71",
+    "num_bikes_available": 14,
+    "num_docks_available": 16,
+    "num_bikes_disabled": 0,
+    "name": "071 - CERRITO",
+    "address": "Libertad & lavalle",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "73",
+    "num_bikes_available": 12,
+    "num_docks_available": 4,
+    "num_bikes_disabled": 0,
+    "name": "073 - Ruy Díaz de Guzmán",
+    "address": "Avenida Martin Garcia y Ruy Díaz de Guzmán",
+    "groups": [
+      "BOCA"
+    ]
+  },
+  {
+    "station_id": "74",
+    "num_bikes_available": 1,
+    "num_docks_available": 28,
+    "num_bikes_disabled": 1,
+    "name": "074 - INSTITUTO  LELOIR",
+    "address": "Juana De Ibarbourou & Av Patricias Argentinas",
+    "groups": [
+      "CABALLITO"
+    ]
+  },
+  {
+    "station_id": "75",
+    "num_bikes_available": 14,
+    "num_docks_available": 5,
+    "num_bikes_disabled": 1,
+    "name": "075 - Plaza Primero de Mayo",
+    "address": "238 Pichincha",
+    "groups": [
+      "BALVANERA"
+    ]
+  },
+  {
+    "station_id": "76",
+    "num_bikes_available": 9,
+    "num_docks_available": 11,
+    "num_bikes_disabled": 0,
+    "name": "076 - Ayacucho",
+    "address": "Ayacucho &Peron, Juan Domingo, Tte. General",
+    "groups": [
+      "BALVANERA"
+    ]
+  },
+  {
+    "station_id": "77",
+    "num_bikes_available": 5,
+    "num_docks_available": 11,
+    "num_bikes_disabled": 0,
+    "name": "109 - ESTACION PUEYRREDON",
+    "address": "Bolivia 5071",
+    "groups": [
+      "VILLA PUYRREDON"
+    ]
+  },
+  {
+    "station_id": "79",
+    "num_bikes_available": 2,
+    "num_docks_available": 28,
+    "num_bikes_disabled": 0,
+    "name": "079 - AZUCENA VILLAFLOR",
+    "address": "Villaflor, Azucena & Dealessi, Pierina",
+    "groups": [
+      "PUERTO MADERO"
+    ]
+  },
+  {
+    "station_id": "80",
+    "num_bikes_available": 8,
+    "num_docks_available": 8,
+    "num_bikes_disabled": 0,
+    "name": "080 - DOBLAS",
+    "address": "608 Doblas & Valle",
+    "groups": [
+      "CABALLITO"
+    ]
+  },
+  {
+    "station_id": "82",
+    "num_bikes_available": 2,
+    "num_docks_available": 18,
+    "num_bikes_disabled": 0,
+    "name": "082 - HOSPITAL ITALIANO",
+    "address": "394 Rawson & Potosi",
+    "groups": [
+      "ALMAGRO"
+    ]
+  },
+  {
+    "station_id": "83",
+    "num_bikes_available": 0,
+    "num_docks_available": 20,
+    "num_bikes_disabled": 0,
+    "name": "083 - Paraná",
+    "address": "1590 Lavalle",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "85",
+    "num_bikes_available": 2,
+    "num_docks_available": 18,
+    "num_bikes_disabled": 0,
+    "name": "085 - AGUERO",
+    "address": "Aguero & Mansilla, Lucio Norberto, General",
+    "groups": [
+      "RECOLETA"
+    ]
+  },
+  {
+    "station_id": "86",
+    "num_bikes_available": 5,
+    "num_docks_available": 13,
+    "num_bikes_disabled": 2,
+    "name": "086 - SAAVEDRA",
+    "address": "1019 Saavedra",
+    "groups": [
+      "SAN CRISTOBAL"
+    ]
+  },
+  {
+    "station_id": "87",
+    "num_bikes_available": 8,
+    "num_docks_available": 8,
+    "num_bikes_disabled": 0,
+    "name": "087 - Guayaquil",
+    "address": "Guayaquil & Doblas",
+    "groups": [
+      "CABALLITO"
+    ]
+  },
+  {
+    "station_id": "89",
+    "num_bikes_available": 10,
+    "num_docks_available": 10,
+    "num_bikes_disabled": 0,
+    "name": "089 - Cabello",
+    "address": "3082 Cabello",
+    "groups": [
+      "PALERMO"
+    ]
+  },
+  {
+    "station_id": "91",
+    "num_bikes_available": 10,
+    "num_docks_available": 10,
+    "num_bikes_disabled": 0,
+    "name": "091 - Pasco",
+    "address": "708 Pasco & Chile",
+    "groups": [
+      "BALVANERA"
+    ]
+  },
+  {
+    "station_id": "92",
+    "num_bikes_available": 9,
+    "num_docks_available": 11,
+    "num_bikes_disabled": 0,
+    "name": "092 - Salcedo",
+    "address": "2908 Salcedo & Dean Funes",
+    "groups": [
+      "PARQUE PATRICIOS"
+    ]
+  },
+  {
+    "station_id": "93",
+    "num_bikes_available": 15,
+    "num_docks_available": 2,
+    "num_bikes_disabled": 3,
+    "name": "093 - CARLOS CALVO",
+    "address": "Sarandi 1010",
+    "groups": [
+      "SAN CRISTOBAL"
+    ]
+  },
+  {
+    "station_id": "94",
+    "num_bikes_available": 10,
+    "num_docks_available": 20,
+    "num_bikes_disabled": 0,
+    "name": "094 - GÚZMAN",
+    "address": "Av Guzman 129 & Leiva",
+    "groups": [
+      "CHACARITA"
+    ]
+  },
+  {
+    "station_id": "95",
+    "num_bikes_available": 8,
+    "num_docks_available": 7,
+    "num_bikes_disabled": 1,
+    "name": "095 - ESMERALDA",
+    "address": "ESMERALDA 516",
+    "groups": [
+      "SAN NICOLAS"
+    ]
+  },
+  {
+    "station_id": "96",
+    "num_bikes_available": 9,
+    "num_docks_available": 11,
+    "num_bikes_disabled": 0,
+    "name": "096 - Carlos Gardel",
+    "address": "3302 Guardia Vieja & Aguero",
+    "groups": [
+      "BALVANERA"
+    ]
+  },
+  {
+    "station_id": "98",
+    "num_bikes_available": 1,
+    "num_docks_available": 14,
+    "num_bikes_disabled": 1,
+    "name": "037- Claudia Pía Baudracco",
+    "address": "Esmeralda y Rivadavia",
+    "groups": [
+      "MONSERRAT"
+    ]
+  },
+  {
+    "station_id": "99",
+    "num_bikes_available": 2,
+    "num_docks_available": 16,
+    "num_bikes_disabled": 2,
+    "name": "099 - Malabia",
+    "address": "780 Malabia & Loyola",
+    "groups": [
+      "VILLA CRESPO"
+    ]
+  },
+  {
+    "station_id": "101",
+    "num_bikes_available": 4,
+    "num_docks_available": 16,
+    "num_bikes_disabled": 0,
+    "name": "101 - Fitz Roy",
+    "address": "Fitz Roy  1092 & Loyola",
+    "groups": [
+      "CHACARITA"
+    ]
+  },
+  {
+    "station_id": "104",
+    "num_bikes_available": 4,
+    "num_docks_available": 26,
+    "num_bikes_disabled": 0,
+    "name": "104 - Federico Lacroze",
+    "address": "Av. Guzman 1100 & Av. Corrientes",
+    "groups": [
+      "CHACARITA"
+    ]
+  },
+  {
+    "station_id": "107",
+    "num_bikes_available": 10,
+    "num_docks_available": 5,
+    "num_bikes_disabled": 1,
+    "name": "107 - HOSPITAL GARRAHAN",
+    "address": "Brasil & Pichincha",
+    "groups": [
+      "PARQUE PATRICIOS"
+    ]
+  }
+]
