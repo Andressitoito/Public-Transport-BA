@@ -60,11 +60,8 @@ crea la carpeta main con el script y el index linkeado
 
 
  <div class="section p-0">
-  <div class="container p-0">
+  <div class="container p-0" id="cards-container">
 
-   <div id="cards-container" class="container">
-
-   </div>
 
    <div class="card m-2">
     <div class="card-title">
@@ -167,6 +164,31 @@ crea la carpeta main con el script y el index linkeado
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </div>
  </div>
  <!--  {last_updated: 1653237302, ttl: 27, data: {…}}
@@ -242,50 +264,31 @@ station_id: "2"
   // getbikesData()
   //  .then((dataStationsInfo) => {
   //   console.log(dataStationsInfo)
-
   //   const bikesInformation = getBikes(dataStationsInfo.data.stations)
   //   bikesInfo = bikesInformation
   //   console.log(bikesInfo)
-
   //   getStationsData()
   //    .then((dataStations) => {
-
   //     console.log(dataStations)
   //     const getfullBycicleStationInfo = getBycicleStationInfo(dataStations.data.stations, bikesInfo)
-
   //     fullBycicleStationInfo = getfullBycicleStationInfo
   //    })
-
   //    .then(() => {
   //     console.log(fullBycicleStationInfo)
-
-  //     createCards(fullBycicleStationInfo)
+  // bycicleStationInfo = bikeSegments(fullBycicleStationInfo)
+  //  console.log(bycicleStationInfo)
+  //     createCards(bycicleStationInfo)
   //    })
-
-
   //  })
 
 
 
- 
 
 
 
 
-  // fetch('https://datosabiertos-transporte-apis.buenosaires.gob.ar:443/ecobici/gbfs/stationInformation?client_id=ccf6a5fb09eb40658fa10205fa9cf5ad&client_secret=942459FdaA09428BB1Be9F5C254BDf38')
-  //    .then((res) => res.json())
-  //    .then((data) => {
-  //     console.log(data.data.stations)
-
-  //     getBycicleStationInfo(data.data.stations)
-  //    })
 
 
-
-
-  // fetch('https://datosabiertos-transporte-apis.buenosaires.gob.ar:443/ecobici/gbfs/systemInformation?client_id=ccf6a5fb09eb40658fa10205fa9cf5ad&client_secret=942459FdaA09428BB1Be9F5C254BDf38')
-  // .then((res) => res.json())
-  // .then((data) => console.log(data))
 
 
   //    var date = new Date(1942615200 * 1000);
@@ -302,13 +305,19 @@ station_id: "2"
   /* /////////////////////////////////// */
   let bikesInfo = []
   let fullBycicleStationInfo = []
+  let bycicleStationInfo = []
+  let pageIndex = 0
 
 
-
+  /* /////////////////////////////////// */
+  /* CREATE CARDS */
+  /* /////////////////////////////////// */
   const createCards = (cardsData) => {
+
    queryId('cards-container').innerHTML = ''
 
-   const html = cardsData.reduce((acc, curr) => {
+
+   const html = cardsData[0].reduce((acc, curr) => {
     const { address, name, groups, num_bikes_available, num_bikes_disabled, num_docks_available } = curr
     return acc += `
     <div class="card m-2">
@@ -333,6 +342,25 @@ station_id: "2"
    queryId('cards-container').innerHTML = html
   }
 
+
+  /* /////////////////////////////////// */
+  /* GET BIKES INFO FROM FETCH */
+  /* /////////////////////////////////// */
+  const getBikes = (arrBikes) => {
+   const bikesInfo = arrBikes.map(bike => {
+    const { station_id, num_bikes_available, num_docks_available, num_bikes_disabled } = bike
+
+    return {
+     station_id, num_bikes_available, num_docks_available, num_bikes_disabled
+    }
+   })
+
+   return bikesInfo
+  }
+
+  /* /////////////////////////////////// */
+  /* GET STATION INFO FROM FETCH & BIKES*/
+  /* /////////////////////////////////// */
   const getBycicleStationInfo = (dataStation, bikesInformation) => {
    const bikesInfo = dataStation.map((curr) => {
     const { station_id, name, address, groups } = curr
@@ -357,21 +385,69 @@ station_id: "2"
    return bikesInfo
   }
 
-  const getBikes = (arrBikes) => {
-   const bikesInfo = arrBikes.map(bike => {
-    const { station_id, num_bikes_available, num_docks_available, num_bikes_disabled } = bike
+  /* /////////////////////////////////// */
+  /* DIVIDE BIKE INFO INTO SEGMENTS OF 20 */
+  /* /////////////////////////////////// */
+  const bikeSegments = (fullBycicleStationInfo) => {
+   const items = fullBycicleStationInfo //… your array, filled with values
+   const n = 20 //tweak this to add more items per line
 
-    return {
-     station_id, num_bikes_available, num_docks_available, num_bikes_disabled
-    }
-   })
+   const result = new Array(Math.ceil(items.length / n))
+    .fill()
+    .map(_ => items.splice(0, n))
 
-   return bikesInfo
+   return result
   }
 
+  // bikeSegments(bikes)
+
+  // console.log(bikes)
+
+ //  let bikesegment = bikeSegments(bikes)
+
+ //  console.log(bikesegment[1])
+
+ //  let bikees = bikesegment[1]
+ //  console.log(bikees)
+
+ // bikesegment[2].map((acc,curr) =>{
+ //   console.log('entro')
+ //  })
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // fetch('https://datosabiertos-transporte-apis.buenosaires.gob.ar:443/ecobici/gbfs/stationInformation?client_id=ccf6a5fb09eb40658fa10205fa9cf5ad&client_secret=942459FdaA09428BB1Be9F5C254BDf38')
+  //    .then((res) => res.json())
+  //    .then((data) => {
+  //     console.log(data.data.stations)
+
+  //     getBycicleStationInfo(data.data.stations)
+  //    })
+
+
+
+
+  // fetch('https://datosabiertos-transporte-apis.buenosaires.gob.ar:443/ecobici/gbfs/systemInformation?client_id=ccf6a5fb09eb40658fa10205fa9cf5ad&client_secret=942459FdaA09428BB1Be9F5C254BDf38')
+  // .then((res) => res.json())
+  // .then((data) => console.log(data))
 
 
 
